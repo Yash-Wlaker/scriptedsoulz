@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>scriptedsoulz</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174855.png">
   <style>
     body {
       margin: 0;
@@ -16,6 +16,22 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .pulse {
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     .profile {
@@ -72,6 +88,11 @@
       box-shadow: 0 0 12px #00ffff70;
     }
 
+    .link-btn img {
+      height: 20px;
+      width: 20px;
+    }
+
     footer {
       margin-top: auto;
       padding: 20px;
@@ -79,16 +100,34 @@
       color: #888;
     }
 
-    .fa-brands {
-      font-size: 20px;
+    audio {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <div class="profile">
-    <img src="https://i.imgur.com/VbqBzFk.jpg" alt="Profile Picture">
+  <div class="profile pulse">
+    <img src="https://yash-wlaker.github.io/scriptedsoulz/assets/cropped_pfp.jpg" alt="Profile Picture">
     <h1>scriptedsoulz</h1>
   </div>
 
   <div class="links">
-    <a class="link-btn" href="ht
+    <a class="link-btn" href="https://www.instagram.com/bruhh_yash/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"> Instagram
+    </a>
+    <a class="link-btn" href="https://open.spotify.com/user/31iaegtue4eo6m5u7pexhhlsr5gu" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify"> Spotify
+    </a>
+  </div>
+
+  <footer>
+    Made with ❤️ by Yash
+  </footer>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/bh8ybj.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
+
