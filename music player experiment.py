@@ -23,4 +23,4 @@ def clear():
 
 ttk.Button(root, text="Clear", command=clear).pack()
 
-root.mainloop()
+root.mainloop() 
