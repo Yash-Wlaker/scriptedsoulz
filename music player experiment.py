@@ -1,2 +1,1 @@
-gUI = 55
-print("GUI level is : ", gUI)
+print("Hola amigos")
